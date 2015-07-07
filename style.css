@@ -1,26 +1,47 @@
 /* Styles go here */
-.container{
-  border: 1px solid #000;
+.container {
+    border: 1px solid #000;
 }
-header{
-  height: 100px;
+
+header {
+    height: 100px;
 }
-.input[type=text]{
-  padding: 80px 0px;
-  height: 300px;
+
+.input[type=text] {
+    padding: 80px 0px;
+    height: 300px;
 }
-.user-display{
-  height:400px;
+
+.user-display {
+    height: 400px;
 }
-.user-display p{
-  font-size: 2rem;
-  line-height: 1.9;
+
+.user-display p {
+    font-size: 2rem;
+    line-height: 1.9;
 }
-.errors{
-  clear: both;
-  background-color: red;
-  color: #fff;
+
+.errors {
+    clear: both;
+    background-color: red;
+    color: #fff;
 }
-.errors h3{
-  color: #fff;
+
+.errors h3 {
+    color: #fff;
 }
+
+.view {
+    transition: opacity ease .9s;
+}
+
+.view.ng-hide, .view.ng-hide-add, .view.ng-hide-add-active {
+    opacity: 0;
+}
+.view.ng-hide-add-active{
+    display: none;
+}
+.view.ng-hide-remove-active{
+    opacity: 1;
+}
+

@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <script data-require="angular.js@1.3.10" data-semver="1.3.10"
           src="https://code.angularjs.org/1.3.10/angular.js"></script>
+  <script type="text/javascript" src="https://code.angularjs.org/1.3.10/angular-animate.min.js"></script>
   <script src="script.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
@@ -21,7 +22,7 @@
       <h1>Automate This!</h1>
     </div>
   </header>
-  <section class="input row" ng-show="view=='input'">
+  <section class="input row view" ng-show="view=='input'">
     <form name="inputForm" novalidate ng-submit="buildStory()">
       <div class="col-md-12">
         <h2>Please provide the following information.</h2>
@@ -91,7 +92,7 @@
     </form>
   </section>
 
-  <section class="user-display row" ng-show="view=='story'">
+  <section class="user-display row view" ng-show="view=='story'">
     <div class="col-md-12 panel panel-default">
       <h1>The Story</h1>
 
@@ -103,7 +104,7 @@
         offer a
         course on {{useless_skill}} so {{genderStr2}} studied programming instead. What a great decision! With
         {{genderStr1}} new skills,
-        {{name}} built a(n) {{adjective}} robot named {{obnoxiuous_celbertity}} that not only loved to {{dirty_task}}
+        {{name}} built a(n) {{adjective}} robot named {{obnoxiuous_celebrity}} that not only loved to {{dirty_task}}
         but did it {{huge_number}} times faster.</p>
     </div>
     <div class="col-md-12">

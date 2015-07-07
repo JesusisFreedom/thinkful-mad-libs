@@ -1,5 +1,5 @@
 // Code goes here
-angular.module('myApp', [])
+var app = angular.module('myApp', ['ngAnimate'])
   .filter('niceName', function(){
     return function(input){
       var spaced = input.replace('_',' '),
@@ -37,5 +37,6 @@ angular.module('myApp', [])
 
     $scope.resetStory = function(){
       init();
+      $scope.inputForm.$setPristine();
     };
   });
