@@ -16,3 +16,11 @@ header{
   font-size: 2rem;
   line-height: 1.9;
 }
+.errors{
+  clear: both;
+  background-color: red;
+  color: #fff;
+}
+.errors h3{
+  color: #fff;
+}
